@@ -22,118 +22,117 @@
 
 <script>
 $(document).ready(function(){
-  $("a").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top - 100
-      }, 1500, function(){
-        window.location.hash = hash;
-      });
-    }
-  });
+    $("a").on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top - 100
+            }, 1500, function(){
+                window.location.hash = hash;
+            });
+        }
+    });
 });
 </script>
 <script src="../resources/js/wow1.js"></script>
-    <script>
-        new WOW().init();
-    </script>
+<script>
+new WOW().init();
+</script>
 
 <body>
-<div class="background_img_igem">
-  <div class="navbarzindex">
-  <div class="navbar-brand_igem"><a href="http://2018.igem.org/Team:UCL">
-        <img class="img-logo_igem" src="http://2018.igem.org/wiki/images/7/73/T--UCL--Logo2.png" ></a>
-    </div>
+    <div class="background_img_igem">
+        <div class="navbarzindex">
+            <div class="navbar-brand_igem"><a href="http://2018.igem.org/Team:UCL">
+                <img class="img-logo_igem" src="http://2018.igem.org/wiki/images/7/73/T--UCL--Logo2.png" ></a>
+            </div>
 
-<div class="topnav_igem" id="myTopnav_igem">
-<div class="floatright_igem">
-<a href="javascript:void(0);" style="font-size:21px;" class="icon_igem" onclick="myFunction()">&#9776;</a>
-  <div class="dropdown_igem">
-    <button class="dropbtn_igem"onclick="People()">People
+            <div class="topnav_igem" id="myTopnav_igem">
+                <div class="floatright_igem">
+                    <a href="javascript:void(0);" style="font-size:21px;" class="icon_igem" onclick="myFunction()">&#9776;</a>
+                    <div class="dropdown_igem">
+                        <button class="dropbtn_igem"onclick="People()">People
 
-    </button>
-    <div class="dropdown-content_igem"id="dropdownpeople_igem">
-        <a href="http://2018.igem.org/Team:UCL/Team">Team</a>
-        <a href="http://2018.igem.org/Team:UCL/Attributions">Attributions</a>
-    </div>
-  </div>
-  <div class="dropdown_igem">
-    <button class="dropbtn_igem"onclick="Project()">Project
+                        </button>
+                        <div class="dropdown-content_igem"id="dropdownpeople_igem">
+                            <a href="https://setaucl.github.io/People/team.html">Team</a>
+                            <a href="https://setaucl.github.io/People/attributions.html">Attributions</a>
+                            <a href="https://setaucl.github.io/People/attributions.html#Sponsors">Sponsors</a>
+                        </div>
+                    </div>
+                    <div class="dropdown_igem">
+                        <button class="dropbtn_igem"onclick="Project()">Project
 
-    </button>
-    <div class="dropdown-content_igem"id="dropdownproject_igem">
-        <a href="http://2018.igem.org/Team:UCL/Description">Description</a>
-        <a href="http://2018.igem.org/Team:UCL/Results">Results</a>
-        <a href="http://2018.igem.org/Team:UCL/Demonstrate">Demonstrate</a>
-        <a href="http://2018.igem.org/Team:UCL/InterLab">InterLab</a>
-        <a href="http://2018.igem.org/Team:UCL/Safety">Safety</a>
-    </div>
-  </div>
-  <div class="dropdown_igem">
-    <button class="dropbtn_igem"onclick="Parts()">Parts
+                        </button>
+                        <div class="dropdown-content_igem"id="dropdownproject_igem">
+                            <a href="https://setaucl.github.io/Project/description.html">Description</a>
+                            <a href="https://setaucl.github.io/Project/results.html">Results</a>
+                            <a href="https://setaucl.github.io/Project/demonstrate.html">Demonstrate</a>
+                            <a href="https://setaucl.github.io/Project/interLab.html">InterLab</a>
+                            <a href="https://setaucl.github.io/Project/safety.html">Safety</a>
+                        </div>
+                    </div>
+                    <div class="dropdown_igem">
+                        <button class="dropbtn_igem"onclick="Parts()">Parts
 
-    </button>
-    <div class="dropdown-content_igem"id="dropdownparts_igem">
-        <a href="http://2018.igem.org/Team:UCL/Design">Part Design</a>
-        <a href="http://2018.igem.org/Team:UCL/Parts">Parts</a>
-        <a href="http://2018.igem.org/Team:UCL/Improve">Improved Part</a>
-    </div>
-  </div>
-  <div class="dropdown_igem">
-    <button class="dropbtn_igem"onclick="Modelling()">Modelling
+                        </button>
+                        <div class="dropdown-content_igem"id="dropdownparts_igem">
+                            <a href="https://setaucl.github.io/Parts/design.html">Part Design</a>
+                            <a href="https://setaucl.github.io/Parts/parts.html">Parts</a>
+                            <a href="https://setaucl.github.io/Parts/improve.html">Improved Part</a>
+                        </div>
+                    </div>
+                    <div class="dropdown_igem">
+                        <button class="dropbtn_igem"onclick="Modelling()">Modelling
 
-    </button>
-    <div class="dropdown-content_igem"id="dropdownmodelling_igem">
-        <a href="http://2018.igem.org/Team:UCL/Model">Modelling</a>
-    </div>
-  </div>
-  <div class="dropdown_igem">
-    <button class="dropbtn_igem"onclick="Humanpractices()">Human Practices
+                        </button>
+                        <div class="dropdown-content_igem"id="dropdownmodelling_igem">
+                            <a href="https://setaucl.github.io/Modelling/model.html">Modelling</a>
+                        </div>
+                    </div>
+                    <div class="dropdown_igem">
+                        <button class="dropbtn_igem"onclick="Humanpractices()">Human Practices
 
-    </button>
-    <div class="dropdown-content_igem"id="dropdownhumanpractices_igem">
-        <a href="http://2018.igem.org/Team:UCL/Human_Practices">Human Practices</a>
-        <a href="http://2018.igem.org/Team:UCL/Public_Engagement">Public Engagement</a>
-        <a href="http://2018.igem.org/Team:UCL/Collaborations">Collaborations</a>
-    </div>
-  </div>
-  <div class="dropdown_igem">
-    <button class="dropbtn_igem"onclick="Notebook()">Notebook
+                        </button>
+                        <div class="dropdown-content_igem"id="dropdownhumanpractices_igem">
+                            <a href="https://setaucl.github.io/Human_Practices/Human_Practices.html">Human Practices</a>
+                            <a href="https://setaucl.github.io/Human_Practices/public_engagement.html">Public Engagement</a>
+                            <a href="https://setaucl.github.io/Human_Practices/collaborations.html">Collaborations</a>
+                        </div>
+                    </div>
+                    <div class="dropdown_igem">
+                        <button class="dropbtn_igem"onclick="Notebook()">Notebook
 
-    </button>
-    <div class="dropdown-content_igem"id="dropdownnotebook_igem">
-        <a href="http://2018.igem.org/Team:UCL/Notebook">Notebook</a>
-        <a href="http://2018.igem.org/Team:UCL/Achievements">Achievements</a>
-        <a href="http://2018.igem.org/Team:UCL/Experiments">Experiments</a>
-    </div>
-  </div>
+                        </button>
+                        <div class="dropdown-content_igem"id="dropdownnotebook_igem">
+                            <a href="https://setaucl.github.io/Notebook/notebook.html">Notebook</a>
+                            <a href="https://setaucl.github.io/Notebook/achievements.html">Achievements</a>
+                            <a href="https://setaucl.github.io/Notebook/experiments.html">Experiments</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-
-</div>
-</div>
-</div>
-
-<script>
-  $(window).on('scroll',function(){
-    if($(window).scrollTop()){
-      $('.navbarzindex').addClass('black');
+        <script>
+        $(window).on('scroll',function(){
+            if($(window).scrollTop()){
+                $('.navbarzindex').addClass('black');
+            }
+            else {
+                $('.navbarzindex').removeClass('black');
+            }
+        })
+    </script>
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav_igem");
+        if (x.className === "topnav_igem") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav_igem";
+        }
     }
-    else {
-      $('.navbarzindex').removeClass('black');
-    }
-  })
-</script>
-<script>
-function myFunction() {
-    var x = document.getElementById("myTopnav_igem");
-    if (x.className === "topnav_igem") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav_igem";
-    }
-}
 </script>
 
 <script>
@@ -167,203 +166,203 @@ function myFunction() {
 </script>
 <!--BODY==================================================================== -->
 <body>
-            <div class="container">
-                <div class="h1_igem_subpage1">Meet the Team</div>
-                    <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
-                        <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/3/32/T--UCL--team.jpg" />
-                    </div>
-            </div>
-            <div class="container container_igem2">
-                <div class="container">
-                        <div class="card-deck">
-                            <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
-                                <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/a/ab/T--UCL--agata.jpg" />
-                                <div class="card-body text-justify">
-                                    <p class="card-text">
-                                      <b>NICKNAME</b>: The Fencing Queen<br>
-                                      <b>AGE</b>: 22<br>
-                                      <b>WHERE ARE YOU FROM</b>: Polandball<br>
-                                      <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: Doing laundry<br>
-                                      <b>FAVOURITE QUOTE FROM iGEM</b>: “Sorry I’m late”<br>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
-                                <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/b/b0/T--UCL--Catherine.jpg" />
-                                <div class="card-body text-justify">
-                                    <p class="card-text">
-                                      <b>NICKNAME</b>: Cat (I’m a kitty cat)<br>
-                                      <b>AGE</b>: 21<br>
-                                      <b>WHERE ARE YOU FROM</b>: A cold place...Canada<br>
-                                      <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: Drink my sorrows away <br>
-                                      <b>FAVOURITE QUOTE FROM iGEM</b>: “oof”<br>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
-                                <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/e/e6/T--UCL--eloise.jpg" />
-                                <div class="card-body text-justify">
-                                    <p class="card-text">
-                                      <b>NICKNAME</b>: The non-agar pourer<br>
-                                      <b>AGE</b>: 22<br>
-                                      <b>WHERE ARE YOU FROM</b>: The Queen’s Garden <br>
-                                      <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: Hoarding my karma<br>
-                                      <b>FAVOURITE QUOTE FROM iGEM</b>: “Don’t say the G word”<br>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                <div class="container">
-                        <div class="card-deck">
-                            <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
-                                <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/5/53/T--UCL--gio.jpg" />
-                                <div class="card-body text-justify">
-                                    <p class="card-text">
-                                      <b>NICKNAME</b>: G-G-G-Gio<br>
-                                      <b>AGE</b>: 21<br>
-                                      <b>WHERE ARE YOU FROM</b>: A pasta place in London, UK<br>
-                                      <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: criGEM<br>
-                                      <b>FAVOURITE QUOTE FROM iGEM</b>: “Gio is so beautiful”<br>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
-                                <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/5/5f/T--UCL--jdc1.jpg" />
-                                <div class="card-body text-justify">
-                                    <p class="card-text">
-                                      <b>NICKNAME</b>: DC - District of Columbia<br>
-                                      <b>AGE</b>: 22<br>
-                                      <b>WHERE ARE YOU FROM</b>: Pizza Hut, Turin, Italy<br>
-                                      <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: On the phone with his grandma<br>
-                                      <b>FAVOURITE QUOTE FROM iGEM</b>: “I’m not on the phone with my grandma”<br>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
-                                <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/d/d3/T--UCL--jg.jpg" />
-                                <div class="card-body text-justify">
-                                    <p class="card-text">
-                                      <b>NICKNAME</b>: Baby Jacopo<br>
-                                      <b>AGE</b>: 19<br>
-                                      <b>WHERE ARE YOU FROM</b>: A pasta place on top of a hill in Italy<br>
-                                      <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: Fall off a penny board <br>
-                                      <b>FAVOURITE QUOTE FROM iGEM</b>: “Put some pants on”<br>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                <div class="container">
-                        <div class="card-deck">
-                            <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
-                                <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/3/3d/T--UCL--_mat.jpg" />
-                                <div class="card-body text-justify">
-                                    <p class="card-text">
-                                      <b>NICKNAME</b>: The best :)<br>
-                                      <b>AGE</b>: 20<br>
-                                      <b>WHERE ARE YOU FROM</b>: Yebluana??<br>
-                                      <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: Buy Jagerbombs<br>
-                                      <b>FAVOURITE QUOTE FROM iGEM</b>: “Shots anyone?”<br>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
-                                <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/d/d0/T--UCL--Idan.jpg" />
-                                <div class="card-body text-justify">
-                                    <p class="card-text">
-                                      <b>NICKNAME</b>: Damn Daniel!<br>
-                                      <b>AGE</b>: 19<br>
-                                      <b>WHERE ARE YOU FROM</b>: The British part of China<br>
-                                      <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: Going bankrupt eating salmon<br>
-                                      <b>FAVOURITE QUOTE FROM iGEM</b>: “Want some gum?”<br>
-
-
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
-                                <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/4/42/T--UCL--pen.jpg" />
-                                <div class="card-body text-justify">
-                                    <p class="card-text">
-                                      <b>NICKNAME</b>: Emperor Penguin<br>
-                                      <b>AGE</b>: 21<br>
-                                      <b>WHERE ARE YOU FROM</b>: A magical place in the Far Orient<br>
-                                      <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: “Pretend to be Japanese”<br>
-                                      <b>FAVOURITE QUOTE FROM iGEM</b>: “Holy shh-”<br>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                <div class="container">
-                        <div class="card-deck">
-                            <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
-                                <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/6/66/T--UCL--st.jpg" />
-                                <div class="card-body text-justify">
-                                    <p class="card-text">
-                                      <b>NICKNAME</b>: I don’t have a nickname<br>
-                                      <b>AGE</b>: 19<br>
-                                      <b>WHERE ARE YOU FROM</b>: South of the Far Orient<br>
-                                      <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: Deciding between Matlab and Python<br>
-                                      <b>FAVOURITE QUOTE FROM iGEM</b>: “ENTOT?”<br>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
-                                <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/1/15/T--UCL--stef.jpg" />
-                                <div class="card-body text-justify">
-                                    <p class="card-text">
-                                      <b>NICKNAME</b>: Shhhhhh-tef<br>
-                                      <b>AGE</b>: 22<br>
-                                      <b>WHERE ARE YOU FROM</b>: A mountain in Switzerland <br>
-                                      <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: Eats chocolate and pets alpacas<br>
-                                      <b>FAVOURITE QUOTE FROM iGEM</b>: “He's like a vegetable”<br>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
-                                <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/5/52/T--UCL--vik.jpg" />
-                                <div class="card-body text-justify">
-                                    <p class="card-text">
-                                      <b>NICKNAME</b>: The Hungarian?<br>
-                                      <b>AGE</b>: 20<br>
-                                      <b>WHERE ARE YOU FROM</b>: Not Hungary <br>
-                                      <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: Getting £2 coffee and cake deal<br>
-                                      <b>FAVOURITE QUOTE FROM iGEM</b>: “Bring back £2 coffee and cake”<br>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-        <div class="container container_igem2">
-            <div class="h1_igem_subpage">Meet our Supervisors</div>
-            <div class="container container_igem2">
-                    <div class="card-deck">
-                        <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
-                            <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/a/a5/T--UCL--steffi.jpg" />
-                            <div class="card-body text-justify">
-                                <p class="card-text"></p>
-                            </div>
-                        </div>
-                        <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
-                            <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/9/9e/T--UCL--vitor.jpg" />
-                            <div class="card-body text-justify">
-                                <p class="card-text"></p>
-                            </div>
-                        </div>
-                        <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
-                            <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/d/df/T--UCL--noell.jpg" />
-                            <div class="card-body text-justify">
-                                <p class="card-text"></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="container">
+        <div class="h1_igem_subpage1">Meet the Team</div>
+        <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
+            <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/3/32/T--UCL--team.jpg" />
         </div>
     </div>
-    <!--FOOTER================================================================== -->
+    <div class="container container_igem2">
+        <div class="container">
+            <div class="card-deck">
+                <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
+                    <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/a/ab/T--UCL--agata.jpg" />
+                    <div class="card-body text-justify">
+                        <p class="card-text">
+                            <b>NICKNAME</b>: The Fencing Queen<br>
+                            <b>AGE</b>: 22<br>
+                            <b>WHERE ARE YOU FROM</b>: Polandball<br>
+                            <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: Doing laundry<br>
+                            <b>FAVOURITE QUOTE FROM iGEM</b>: “Sorry I’m late”<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
+                    <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/b/b0/T--UCL--Catherine.jpg" />
+                    <div class="card-body text-justify">
+                        <p class="card-text">
+                            <b>NICKNAME</b>: Cat (I’m a kitty cat)<br>
+                            <b>AGE</b>: 21<br>
+                            <b>WHERE ARE YOU FROM</b>: A cold place...Canada<br>
+                            <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: Drink my sorrows away <br>
+                            <b>FAVOURITE QUOTE FROM iGEM</b>: “oof”<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
+                    <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/e/e6/T--UCL--eloise.jpg" />
+                    <div class="card-body text-justify">
+                        <p class="card-text">
+                            <b>NICKNAME</b>: The non-agar pourer<br>
+                            <b>AGE</b>: 22<br>
+                            <b>WHERE ARE YOU FROM</b>: The Queen’s Garden <br>
+                            <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: Hoarding my karma<br>
+                            <b>FAVOURITE QUOTE FROM iGEM</b>: “Don’t say the G word”<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card-deck">
+                <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
+                    <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/5/53/T--UCL--gio.jpg" />
+                    <div class="card-body text-justify">
+                        <p class="card-text">
+                            <b>NICKNAME</b>: G-G-G-Gio<br>
+                            <b>AGE</b>: 21<br>
+                            <b>WHERE ARE YOU FROM</b>: A pasta place in London, UK<br>
+                            <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: criGEM<br>
+                            <b>FAVOURITE QUOTE FROM iGEM</b>: “Gio is so beautiful”<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
+                    <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/5/5f/T--UCL--jdc1.jpg" />
+                    <div class="card-body text-justify">
+                        <p class="card-text">
+                            <b>NICKNAME</b>: DC - District of Columbia<br>
+                            <b>AGE</b>: 22<br>
+                            <b>WHERE ARE YOU FROM</b>: Pizza Hut, Turin, Italy<br>
+                            <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: On the phone with his grandma<br>
+                            <b>FAVOURITE QUOTE FROM iGEM</b>: “I’m not on the phone with my grandma”<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
+                    <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/d/d3/T--UCL--jg.jpg" />
+                    <div class="card-body text-justify">
+                        <p class="card-text">
+                            <b>NICKNAME</b>: Baby Jacopo<br>
+                            <b>AGE</b>: 19<br>
+                            <b>WHERE ARE YOU FROM</b>: A pasta place on top of a hill in Italy<br>
+                            <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: Fall off a penny board <br>
+                            <b>FAVOURITE QUOTE FROM iGEM</b>: “Put some pants on”<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card-deck">
+                <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
+                    <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/3/3d/T--UCL--_mat.jpg" />
+                    <div class="card-body text-justify">
+                        <p class="card-text">
+                            <b>NICKNAME</b>: The best :)<br>
+                            <b>AGE</b>: 20<br>
+                            <b>WHERE ARE YOU FROM</b>: Yebluana??<br>
+                            <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: Buy Jagerbombs<br>
+                            <b>FAVOURITE QUOTE FROM iGEM</b>: “Shots anyone?”<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
+                    <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/d/d0/T--UCL--Idan.jpg" />
+                    <div class="card-body text-justify">
+                        <p class="card-text">
+                            <b>NICKNAME</b>: Damn Daniel!<br>
+                            <b>AGE</b>: 19<br>
+                            <b>WHERE ARE YOU FROM</b>: The British part of China<br>
+                            <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: Going bankrupt eating salmon<br>
+                            <b>FAVOURITE QUOTE FROM iGEM</b>: “Want some gum?”<br>
+
+
+                        </p>
+                    </div>
+                </div>
+                <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
+                    <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/4/42/T--UCL--pen.jpg" />
+                    <div class="card-body text-justify">
+                        <p class="card-text">
+                            <b>NICKNAME</b>: Emperor Penguin<br>
+                            <b>AGE</b>: 21<br>
+                            <b>WHERE ARE YOU FROM</b>: A magical place in the Far Orient<br>
+                            <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: “Pretend to be Japanese”<br>
+                            <b>FAVOURITE QUOTE FROM iGEM</b>: “Holy shh-”<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card-deck">
+                <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
+                    <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/6/66/T--UCL--st.jpg" />
+                    <div class="card-body text-justify">
+                        <p class="card-text">
+                            <b>NICKNAME</b>: I don’t have a nickname<br>
+                            <b>AGE</b>: 19<br>
+                            <b>WHERE ARE YOU FROM</b>: South of the Far Orient<br>
+                            <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: Deciding between Matlab and Python<br>
+                            <b>FAVOURITE QUOTE FROM iGEM</b>: “ENTOT?”<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
+                    <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/1/15/T--UCL--stef.jpg" />
+                    <div class="card-body text-justify">
+                        <p class="card-text">
+                            <b>NICKNAME</b>: Shhhhhh-tef<br>
+                            <b>AGE</b>: 22<br>
+                            <b>WHERE ARE YOU FROM</b>: A mountain in Switzerland <br>
+                            <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: Eats chocolate and pets alpacas<br>
+                            <b>FAVOURITE QUOTE FROM iGEM</b>: “He's like a vegetable”<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
+                    <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/5/52/T--UCL--vik.jpg" />
+                    <div class="card-body text-justify">
+                        <p class="card-text">
+                            <b>NICKNAME</b>: The Hungarian?<br>
+                            <b>AGE</b>: 20<br>
+                            <b>WHERE ARE YOU FROM</b>: Not Hungary <br>
+                            <b>WHAT DO YOU DO OUTSIDE OF iGEM</b>: Getting £2 coffee and cake deal<br>
+                            <b>FAVOURITE QUOTE FROM iGEM</b>: “Bring back £2 coffee and cake”<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container container_igem2">
+        <div class="h1_igem_subpage">Meet our Supervisors</div>
+        <div class="container container_igem2">
+            <div class="card-deck">
+                <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
+                    <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/a/a5/T--UCL--steffi.jpg" />
+                    <div class="card-body text-justify">
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+                <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
+                    <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/9/9e/T--UCL--vitor.jpg" />
+                    <div class="card-body text-justify">
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+                <div class="card card_pic_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
+                    <img class="card-image-top card_igem_img" src="http://2018.igem.org/wiki/images/d/df/T--UCL--noell.jpg" />
+                    <div class="card-body text-justify">
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--FOOTER================================================================== -->
 
 
 <div class="footer">
@@ -373,7 +372,7 @@ function myFunction() {
                 <center>
                     <div class="h2_footer_igem">Our Location</div>
                     University College London<br />
-  Gower St, Bloomsbury<br />London <br />WC1E 6BT
+                    Gower St, Bloomsbury<br />London <br />WC1E 6BT
                     <span></span>
 
                 </center>
@@ -381,7 +380,7 @@ function myFunction() {
             <div class="col-lg-4">
                 <center>
                     <div class="h2_footer_igem">Contact Us</div>
-                  ucl.igem@ucl.ac.uk
+                    ucl.igem@ucl.ac.uk
                     <a class="footer_img_igem" href="https://www.ucl.ac.uk/">
                         <img src="http://2018.igem.org/wiki/images/f/ff/T--UCL--UCLLogo.jpeg" height="100rem;" />
                     </a>

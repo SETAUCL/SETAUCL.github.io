@@ -23,119 +23,119 @@
 
 <script>
 $(document).ready(function(){
-  $("a").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top - 100
-      }, 1500, function(){
-        window.location.hash = hash;
-      });
-    }
-  });
+    $("a").on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top - 100
+            }, 1500, function(){
+                window.location.hash = hash;
+            });
+        }
+    });
 });
 </script>
 <script src="../resources/js/wow1.js"></script>
-    <script>
-        new WOW().init();
-    </script>
+<script>
+new WOW().init();
+</script>
 
 <body>
-<div class="background_img_igem">
-  <div class="navbarzindex">
-  <div class="navbar-brand_igem"><a href="http://2018.igem.org/Team:UCL">
-        <img class="img-logo_igem" src="http://2018.igem.org/wiki/images/7/73/T--UCL--Logo2.png" ></a>
-    </div>
+    <div class="background_img_igem">
+        <div class="navbarzindex">
+            <div class="navbar-brand_igem"><a href="http://2018.igem.org/Team:UCL">
+                <img class="img-logo_igem" src="http://2018.igem.org/wiki/images/7/73/T--UCL--Logo2.png" ></a>
+            </div>
 
-<div class="topnav_igem" id="myTopnav_igem">
-<div class="floatright_igem">
-<a href="javascript:void(0);" style="font-size:21px;" class="icon_igem" onclick="myFunction()">&#9776;</a>
-  <div class="dropdown_igem">
-    <button class="dropbtn_igem"onclick="People()">People
+            <div class="topnav_igem" id="myTopnav_igem">
+                <div class="floatright_igem">
+                    <a href="javascript:void(0);" style="font-size:21px;" class="icon_igem" onclick="myFunction()">&#9776;</a>
+                    <div class="dropdown_igem">
+                        <button class="dropbtn_igem"onclick="People()">People
 
-    </button>
-    <div class="dropdown-content_igem"id="dropdownpeople_igem">
-        <a href="http://2018.igem.org/Team:UCL/Team">Team</a>
-        <a href="http://2018.igem.org/Team:UCL/Attributions">Attributions</a>
-        <a href="http://2018.igem.org/Team:UCL/Attributions#Sponsors">Sponsors</a>
-    </div>
-  </div>
-  <div class="dropdown_igem">
-    <button class="dropbtn_igem"onclick="Project()">Project
+                        </button>
+                        <div class="dropdown-content_igem"id="dropdownpeople_igem">
+                            <a href="https://setaucl.github.io/People/team.html">Team</a>
+                            <a href="https://setaucl.github.io/People/attributions.html">Attributions</a>
+                            <a href="https://setaucl.github.io/People/attributions.html#Sponsors">Sponsors</a>
+                        </div>
+                    </div>
+                    <div class="dropdown_igem">
+                        <button class="dropbtn_igem"onclick="Project()">Project
 
-    </button>
-    <div class="dropdown-content_igem"id="dropdownproject_igem">
-        <a href="http://2018.igem.org/Team:UCL/Description">Description</a>
-        <a href="http://2018.igem.org/Team:UCL/Results">Results</a>
-        <a href="http://2018.igem.org/Team:UCL/Demonstrate">Demonstrate</a>
-        <a href="http://2018.igem.org/Team:UCL/InterLab">InterLab</a>
-        <a href="http://2018.igem.org/Team:UCL/Safety">Safety</a>
-    </div>
-  </div>
-  <div class="dropdown_igem">
-    <button class="dropbtn_igem"onclick="Parts()">Parts
+                        </button>
+                        <div class="dropdown-content_igem"id="dropdownproject_igem">
+                            <a href="https://setaucl.github.io/Project/description.html">Description</a>
+                            <a href="https://setaucl.github.io/Project/results.html">Results</a>
+                            <a href="https://setaucl.github.io/Project/demonstrate.html">Demonstrate</a>
+                            <a href="https://setaucl.github.io/Project/interLab.html">InterLab</a>
+                            <a href="https://setaucl.github.io/Project/safety.html">Safety</a>
+                        </div>
+                    </div>
+                    <div class="dropdown_igem">
+                        <button class="dropbtn_igem"onclick="Parts()">Parts
 
-    </button>
-    <div class="dropdown-content_igem"id="dropdownparts_igem">
-        <a href="http://2018.igem.org/Team:UCL/Design">Part Design</a>
-        <a href="http://2018.igem.org/Team:UCL/Parts">Parts</a>
-        <a href="http://2018.igem.org/Team:UCL/Improve">Improved Part</a>
-    </div>
-  </div>
-  <div class="dropdown_igem">
-    <button class="dropbtn_igem"onclick="Modelling()">Modelling
+                        </button>
+                        <div class="dropdown-content_igem"id="dropdownparts_igem">
+                            <a href="https://setaucl.github.io/Parts/design.html">Part Design</a>
+                            <a href="https://setaucl.github.io/Parts/parts.html">Parts</a>
+                            <a href="https://setaucl.github.io/Parts/improve.html">Improved Part</a>
+                        </div>
+                    </div>
+                    <div class="dropdown_igem">
+                        <button class="dropbtn_igem"onclick="Modelling()">Modelling
 
-    </button>
-    <div class="dropdown-content_igem"id="dropdownmodelling_igem">
-        <a href="http://2018.igem.org/Team:UCL/Model">Modelling</a>
-    </div>
-  </div>
-  <div class="dropdown_igem">
-    <button class="dropbtn_igem"onclick="Humanpractices()">Human Practices
+                        </button>
+                        <div class="dropdown-content_igem"id="dropdownmodelling_igem">
+                            <a href="https://setaucl.github.io/Modelling/model.html">Modelling</a>
+                        </div>
+                    </div>
+                    <div class="dropdown_igem">
+                        <button class="dropbtn_igem"onclick="Humanpractices()">Human Practices
 
-    </button>
-    <div class="dropdown-content_igem"id="dropdownhumanpractices_igem">
-        <a href="http://2018.igem.org/Team:UCL/Human_Practices">Human Practices</a>
-        <a href="http://2018.igem.org/Team:UCL/Public_Engagement">Public Engagement</a>
-        <a href="http://2018.igem.org/Team:UCL/Collaborations">Collaborations</a>
-    </div>
-  </div>
-  <div class="dropdown_igem">
-    <button class="dropbtn_igem"onclick="Notebook()">Notebook
+                        </button>
+                        <div class="dropdown-content_igem"id="dropdownhumanpractices_igem">
+                            <a href="https://setaucl.github.io/Human_Practices/Human_Practices.html">Human Practices</a>
+                            <a href="https://setaucl.github.io/Human_Practices/public_engagement.html">Public Engagement</a>
+                            <a href="https://setaucl.github.io/Human_Practices/collaborations.html">Collaborations</a>
+                        </div>
+                    </div>
+                    <div class="dropdown_igem">
+                        <button class="dropbtn_igem"onclick="Notebook()">Notebook
 
-    </button>
-    <div class="dropdown-content_igem"id="dropdownnotebook_igem">
-        <a href="http://2018.igem.org/Team:UCL/Notebook">Notebook</a>
-        <a href="http://2018.igem.org/Team:UCL/Achievements">Achievements</a>
-        <a href="http://2018.igem.org/Team:UCL/Experiments">Experiments</a>
-    </div>
-  </div>
+                        </button>
+                        <div class="dropdown-content_igem"id="dropdownnotebook_igem">
+                            <a href="https://setaucl.github.io/Notebook/notebook.html">Notebook</a>
+                            <a href="https://setaucl.github.io/Notebook/achievements.html">Achievements</a>
+                            <a href="https://setaucl.github.io/Notebook/experiments.html">Experiments</a>
+                        </div>
+                    </div>
 
 
-</div>
-</div>
-</div>
+                </div>
+            </div>
+        </div>
 
-<script>
-  $(window).on('scroll',function(){
-    if($(window).scrollTop()){
-      $('.navbarzindex').addClass('black');
+        <script>
+        $(window).on('scroll',function(){
+            if($(window).scrollTop()){
+                $('.navbarzindex').addClass('black');
+            }
+            else {
+                $('.navbarzindex').removeClass('black');
+            }
+        })
+    </script>
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav_igem");
+        if (x.className === "topnav_igem") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav_igem";
+        }
     }
-    else {
-      $('.navbarzindex').removeClass('black');
-    }
-  })
-</script>
-<script>
-function myFunction() {
-    var x = document.getElementById("myTopnav_igem");
-    if (x.className === "topnav_igem") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav_igem";
-    }
-}
 </script>
 
 
@@ -218,16 +218,16 @@ $(document).ready(function() {
 
     <div class="container container_igem">
         <div id="sidenav" class="sidenav wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
-              <a href="#Overview">Overview</a>
-              <a href="#BB2">BioBrick 2.0</a>
-              <a href="#Intein_Passenger">Intein Passenger</a>
-              <a href="#Functionalisation">Functionalisation</a>
-              <a href="#RFP">Intein Monomer 1 (RFP)</a>
-              <a href="#GFP">Intein Monomer 2 (GFP)</a>
-              <a href="#Spindroin">Spider Silk</a>
-              <a href="#Basic_Parts">Basic Parts</a>
-              <a href="#Composite_Parts">Composite Parts</a>
-          </div>
+            <a href="#Overview">Overview</a>
+            <a href="#BB2">BioBrick 2.0</a>
+            <a href="#Intein_Passenger">Intein Passenger</a>
+            <a href="#Functionalisation">Functionalisation</a>
+            <a href="#RFP">Intein Monomer 1 (RFP)</a>
+            <a href="#GFP">Intein Monomer 2 (GFP)</a>
+            <a href="#Spindroin">Spider Silk</a>
+            <a href="#Basic_Parts">Basic Parts</a>
+            <a href="#Composite_Parts">Composite Parts</a>
+        </div>
 
         <section id="Overview">
             <div class="card card_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
@@ -240,20 +240,20 @@ $(document).ready(function() {
                             <div class="col-sm-12">
                                 <p class="card-text card-text_igem text-justify">
                                     Our BioBricks were created to be used together to enable the polymerisation and functionalisation of biomaterials. All our composite parts contain our BioBrick 2.0 standardisation, which combines canonical BioBrick prefix and suffix with Golden Gate compatible BsaI sites. This standardisation allows for more efficient and flexible cloning.
-                                  </p>
+                                </p>
 
-                                    <p class="card-text card-text_igem text-justify">
+                                <p class="card-text card-text_igem text-justify">
                                     To facilitate polymerisation and functionalisation, we created reporter devices flanked or capped by orthogonal inteins. These BioBricks contain SapI sites before and after their reporter sequence, to create plug-and-play systems where any material protein can be polymerised and any functionalising protein can be incorporated into the final biomaterial.
-                                  </p>
+                                </p>
 
-                                    <p class="card-text card-text_igem text-justify">
+                                <p class="card-text card-text_igem text-justify">
                                     Ultimately, the idea of utilising spider silk to create water filtration biomaterials influenced the design and creation of our BioBricks.
-                                    </p>
-                            </div>
-                              </div>
+                                </p>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
 
         </section>
         <section id="BB2">
@@ -295,7 +295,7 @@ $(document).ready(function() {
                     </div>
                 </div>
             </div>
-    </section>
+        </section>
         <section id="Intein_Passenger">
             <div class="card card_igem wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.1s">
                 <div class="card-title text-center">
@@ -310,9 +310,9 @@ $(document).ready(function() {
                             <div class="col-sm-6">
                                 <p class="card-text card-text_igem text-justify">
                                     <a class="sshh" href="http://parts.igem.org/Part:BBa_K2842669">BBa_K2842669</a> is a DNA construct that encodes a C-terminal segment of the AceL-TerL intein fused to the N-terminus of a mScarlet reporter protein, which contains a C-terminal StrepTag for purification. The AceL-TerL intein acts as a protein ligase that forms a peptide bond between mScarlet and another protein bound to a complementary split intein. During this process, the intein splices itself out of the protein and is not present in the final fusion protein. This construct is a modular platform for the creation of split intein fusion proteins through the SapI restriction sites located immediately upstream and downstream of the mScarlet reporter. <a class="sshh" href="http://parts.igem.org/Part:BBa_K2842680">BBa_K2842680</a> was designed to be used in conjunction with this construct, as it contains the corresponding N-terminal intein segment to enable intein trans-splicing.
-                                  </p>
-                                    <p class="card-text card-text_igem2 text-justify"></p>
-                                    <p class="card-text card-text_igem text-justify">
+                                </p>
+                                <p class="card-text card-text_igem2 text-justify"></p>
+                                <p class="card-text card-text_igem text-justify">
                                     We expressed <a class="sshh" href="http://parts.igem.org/Part:BBa_K2842669">BBa_K2842669</a> in 50 mL cultures and extracted the intein fusion protein through sonication.
                                 </p>
                             </div>
@@ -320,12 +320,12 @@ $(document).ready(function() {
                                 <p class="card-text card-text_igem text-justify">
                                     The clear lysate was purified on Strep-Tactin columns, and a following SDS-PAGE was performed on the samples (A). Additionally, the gel was visualised under UV (B).
                                     <div class="row">
-                                      <div class="col-sm-6">
-                                    <img class="cards_logos3" src="http://2018.igem.org/wiki/images/c/c9/T--UCL--IPgel1.png" />
-                                  </div>
-                                    <div class="col-sm-6">
-                                    <img class="cards_logos6" src="http://2018.igem.org/wiki/images/6/64/T--UCL--IPgel2.png" />
-                                  </div>
+                                        <div class="col-sm-6">
+                                            <img class="cards_logos3" src="http://2018.igem.org/wiki/images/c/c9/T--UCL--IPgel1.png" />
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <img class="cards_logos6" src="http://2018.igem.org/wiki/images/6/64/T--UCL--IPgel2.png" />
+                                        </div>
                                     </div>
 
                                 </p>
@@ -335,8 +335,8 @@ $(document).ready(function() {
                             <div class="col-sm-12">
                                 <p class="card-text card-text_igem2 text-justify">
                                     We cloned two different proteins of interest into our Intein Passenger BioBrick for the functionalisation of biomaterials. These functionalisations are documented in the section below.
-                                  </p>
-                              </div>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -352,13 +352,13 @@ $(document).ready(function() {
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-6">
-                              <center><div class="h4_cards">Nickel Binding Protein (NikR)</div></center>
+                                <center><div class="h4_cards">Nickel Binding Protein (NikR)</div></center>
                                 <p class="card-text card-text_igem text-justify">
                                     <a class="sshh" href="http://parts.igem.org/Part:BBa_K2842710">BBa_K2842710</a> utilises a NikR sequence, which encodes a small protein (133 amino acids) with high affinity (6.8 pM) to nickel. It is a two-domain protein and the C-terminal alone is sufficient to bind nickel tightly (2.2 pM). We used NikR as a proof of concept for our standardised intein fictionalisation method by assembling it in a modular fashion from <a class="sshh" href="http://parts.igem.org/Part:BBa_K2842669">BBa_K2842669</a>. This construct could be used to functionalise intein polymers developed from <a class="sshh" href="http://parts.igem.org/Part:BBa_K2842680">BBa_K2842680</a> and <a class="sshh" href="http://parts.igem.org/Part:BBa_K2842690">BBa_K2842690</a> with the ability to bind and sequester nickel ions from solution.
                                 </p>
                             </div>
                             <div class="col-sm-6">
-                              <center><div class="h4_cards">Estrogen Receptor Protein (ER)</div></center>
+                                <center><div class="h4_cards">Estrogen Receptor Protein (ER)</div></center>
                                 <p class="card-text card-text_igem text-justify">
                                     <a class="sshh" href="http://parts.igem.org/Part:BBa_K2842720">BBa_K2842720</a> utilises an ER sequence, which encodes an ER protein member (M421F) from a superfamily of nuclear receptors. ER binds to its ligand, hormone 17β-estradiol, which activates a signaling pathway that regulates several key biological processes such as reproduction, embryonic development and homeostasis.
                                     When assembled with <a class="sshh" href="http://parts.igem.org/Part:BBa_K2842669">BBa_K2842669</a>, this construct could be used to functionalise intein polymers developed from <a class="sshh" href="http://parts.igem.org/Part:BBa_K2842680">BBa_K2842680</a> and <a class="sshh" href="http://parts.igem.org/Part:BBa_K2842690">BBa_K2842690</a>, with the ability to filter secreted estrogen-related hormones in solution.
@@ -386,7 +386,7 @@ $(document).ready(function() {
                                     <a class="sshh" href="http://parts.igem.org/Part:BBa_K2842680">BBa_K2842680</a> is a genetic device that encodes a novel split-intein flanked reporter device, which enables the use of intein splicing for any protein of interest through SapI digestion. Intein Monomer 1 was created to work in conjunction with its complimentary composite part, Intein Monomer 2 (<a class="sshh" href="http://parts.igem.org/Part:BBa_K2842690">BBa_K2842690</a>), to construct a intein polymerisation system.
                                 </p>
                                 <p class="card-text card-text_igem text-justify">
-                                  We expressed <a class="sshh" href="http://parts.igem.org/Part:BBa_K2842680">BBa_K2842680</a> in 50 mL cultures and extracted the protein through sonication. The clear lysate was purified on Strep-Tactin columns, analysed by SDS-PAGE, and visualised under UV fluorescence.
+                                    We expressed <a class="sshh" href="http://parts.igem.org/Part:BBa_K2842680">BBa_K2842680</a> in 50 mL cultures and extracted the protein through sonication. The clear lysate was purified on Strep-Tactin columns, analysed by SDS-PAGE, and visualised under UV fluorescence.
                                 </p>
                             </div>
                             <div class="col-sm-6">
@@ -432,13 +432,13 @@ $(document).ready(function() {
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-6">
-                              <center><div class="h4_cards">Mini Spidroin</div></center>
+                                <center><div class="h4_cards">Mini Spidroin</div></center>
                                 <p class="card-text card-text_igem text-justify">
                                     For the functionalisation of spider silk, we designed a construct to generate the fusion of a split intein (AceL-TerL N) and a synthetic spider silk protein (MaSp1). We chose to use a shortened synthetic spider-silk known as a “mini-spidroin” (35 kDa) as such proteins are easier to express compared to native length proteins (350 kDa). Mini-spidroins are still capable of being spun into fibres to produce biomaterials and are a promising model system for functionalisation. High GC content and potential sequencing issues, impeded the cloning of this construct, and hence prevented further spider silk workflow.
                                 </p>
                             </div>
                             <div class="col-sm-6">
-                              <center><div class="h4_cards">Spidroin Intein Polymerisation</div></center>
+                                <center><div class="h4_cards">Spidroin Intein Polymerisation</div></center>
                                 <p class="card-text card-text_igem text-justify">
                                     We intend on using our modular SapI assembly system, from BioBricks <a class="sshh" href="http://parts.igem.org/Part:BBa_K2842680">BBa_K2842680</a> and <a class="sshh" href="http://parts.igem.org/Part:BBa_K2842690">BBa_K2842690</a>, to generate constructs that are capable of polymerising dragline spider silk proteins. Our modelling with LAMMPS and the literature suggest that longer length spider-silk proteins have improved mechanical properties. In addition to this, spider silk is a notoriously difficult protein to synthesise. Therefore, by breaking up the protein into shorter segments and assembling it post-translationally, the scale-up of the production of spider silk biomaterials can be enabled.
                                 </p>
@@ -448,10 +448,10 @@ $(document).ready(function() {
                 </div>
             </div>
         </section>
-<center>
-    <section id="Basic_Parts">
-        <button class="collapsible wow fadeInUp basicparts">Our Basic Parts</button>
-            <div class="collapsible_content">
+        <center>
+            <section id="Basic_Parts">
+                <button class="collapsible wow fadeInUp basicparts">Our Basic Parts</button>
+                <div class="collapsible_content">
 
                     <table class="table">
                         <thead>
@@ -620,12 +620,12 @@ $(document).ready(function() {
                         </tbody>
                     </table>
 
-            </div>
-    </section>
-  <br />
-    <section id="Composite_Parts">
-        <button class="collapsible wow fadeInUp">Our Composite Parts</button>
-            <div class="collapsible_content">
+                </div>
+            </section>
+            <br />
+            <section id="Composite_Parts">
+                <button class="collapsible wow fadeInUp">Our Composite Parts</button>
+                <div class="collapsible_content">
                     <table class="table">
                         <thead>
                             <tr>
@@ -671,32 +671,32 @@ $(document).ready(function() {
                         </tbody>
                     </table>
 
-            </div>
-    </section>
-</center>
+                </div>
+            </section>
+        </center>
 
-        </div>
-      </div>
     </div>
+</div>
+</div>
 
 <script>
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
 for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("activelol");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("activelol");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
 }
 </script>
 
-    </div>
+</div>
 
 </div>
 
@@ -709,7 +709,7 @@ for (i = 0; i < coll.length; i++) {
                 <center>
                     <div class="h2_footer_igem">Our Location</div>
                     University College London<br />
-  Gower St, Bloomsbury<br />London <br />WC1E 6BT
+                    Gower St, Bloomsbury<br />London <br />WC1E 6BT
                     <span></span>
 
                 </center>
@@ -717,7 +717,7 @@ for (i = 0; i < coll.length; i++) {
             <div class="col-lg-4">
                 <center>
                     <div class="h2_footer_igem">Contact Us</div>
-                  ucl.igem@ucl.ac.uk
+                    ucl.igem@ucl.ac.uk
                     <a class="footer_img_igem" href="https://www.ucl.ac.uk/">
                         <img src="http://2018.igem.org/wiki/images/f/ff/T--UCL--UCLLogo.jpeg" height="100rem;" />
                     </a>
@@ -734,14 +734,14 @@ for (i = 0; i < coll.length; i++) {
                         <img src="http://2018.igem.org/wiki/images/e/ed/T--UCL--TwitterLogo.svg" style="padding-top:1em;" height="62rem;"/>
 
 
-                    <a href="https://www.instagram.com/ucl.igem/"class="contacticons">
-                        <img src="http://2018.igem.org/wiki/images/3/31/T--UCL--InstaLogo.png" style="padding-top:1em;" height="62rem;"/>
-                    </a>
-                </center>
+                        <a href="https://www.instagram.com/ucl.igem/"class="contacticons">
+                            <img src="http://2018.igem.org/wiki/images/3/31/T--UCL--InstaLogo.png" style="padding-top:1em;" height="62rem;"/>
+                        </a>
+                    </center>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 </body>
 </html

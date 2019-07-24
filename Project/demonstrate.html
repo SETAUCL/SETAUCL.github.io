@@ -22,119 +22,191 @@
 
 <script>
 $(document).ready(function(){
-  $("a").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top - 100
-      }, 1500, function(){
-        window.location.hash = hash;
-      });
-    }
-  });
+    $("a").on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top - 100
+            }, 1500, function(){
+                window.location.hash = hash;
+            });
+        }
+    });
 });
 </script>
 <script src="../resources/js/wow1.js"></script>
-    <script>
-        new WOW().init();
-    </script>
+<script>
+new WOW().init();
+</script>
 
 <body>
-<div class="background_img_igem">
-  <div class="navbarzindex">
-  <div class="navbar-brand_igem"><a href="http://2018.igem.org/Team:UCL">
-        <img class="img-logo_igem" src="http://2018.igem.org/wiki/images/7/73/T--UCL--Logo2.png" ></a>
-    </div>
+    <div class="background_img_igem">
+        <div class="navbarzindex">
+            <div class="navbar-brand_igem"><a href="http://2018.igem.org/Team:UCL">
+                <img class="img-logo_igem" src="http://2018.igem.org/wiki/images/7/73/T--UCL--Logo2.png" ></a>
+            </div>
 
-<div class="topnav_igem" id="myTopnav_igem">
-<div class="floatright_igem">
-<a href="javascript:void(0);" style="font-size:21px;" class="icon_igem" onclick="myFunction()">&#9776;</a>
-  <div class="dropdown_igem">
-    <button class="dropbtn_igem"onclick="People()">People
+            <div class="topnav_igem" id="myTopnav_igem">
+                <div class="floatright_igem">
+                    <a href="javascript:void(0);" style="font-size:21px;" class="icon_igem" onclick="myFunction()">&#9776;</a>
+                    <div class="dropdown_igem">
+                        <button class="dropbtn_igem"onclick="People()">People
 
-    </button>
-    <div class="dropdown-content_igem"id="dropdownpeople_igem">
-        <a href="http://2018.igem.org/Team:UCL/Team">Team</a>
-        <a href="http://2018.igem.org/Team:UCL/Attributions">Attributions</a>
-        <a href="http://2018.igem.org/Team:UCL/Attributions#Sponsors">Sponsors</a>
-    </div>
-  </div>
-  <div class="dropdown_igem">
-    <button class="dropbtn_igem"onclick="Project()">Project
+                        </button>
+                        <div class="dropdown-content_igem"id="dropdownpeople_igem">
+                            <a href="https://setaucl.github.io/People/team.html">Team</a>
+                            <a href="https://setaucl.github.io/People/attributions.html">Attributions</a>
+                            <a href="https://setaucl.github.io/People/attributions.html#Sponsors">Sponsors</a>
+                        </div>
+                    </div>
+                    <div class="dropdown_igem">
+                        <button class="dropbtn_igem"onclick="Project()">Project
 
-    </button>
-    <div class="dropdown-content_igem"id="dropdownproject_igem">
-        <a href="http://2018.igem.org/Team:UCL/Description">Description</a>
-        <a href="http://2018.igem.org/Team:UCL/Results">Results</a>
-        <a href="http://2018.igem.org/Team:UCL/Demonstrate">Demonstrate</a>
-        <a href="http://2018.igem.org/Team:UCL/InterLab">InterLab</a>
-        <a href="http://2018.igem.org/Team:UCL/Safety">Safety</a>
-    </div>
-  </div>
-  <div class="dropdown_igem">
-    <button class="dropbtn_igem"onclick="Parts()">Parts
+                        </button>
+                        <div class="dropdown-content_igem"id="dropdownproject_igem">
+                            <a href="https://setaucl.github.io/Project/description.html">Description</a>
+                            <a href="https://setaucl.github.io/Project/results.html">Results</a>
+                            <a href="https://setaucl.github.io/Project/demonstrate.html">Demonstrate</a>
+                            <a href="https://setaucl.github.io/Project/interLab.html">InterLab</a>
+                            <a href="https://setaucl.github.io/Project/safety.html">Safety</a>
+                        </div>
+                    </div>
+                    <div class="dropdown_igem">
+                        <button class="dropbtn_igem"onclick="Parts()">Parts
 
-    </button>
-    <div class="dropdown-content_igem"id="dropdownparts_igem">
-        <a href="http://2018.igem.org/Team:UCL/Design">Part Design</a>
-        <a href="http://2018.igem.org/Team:UCL/Parts">Parts</a>
-        <a href="http://2018.igem.org/Team:UCL/Improve">Improved Part</a>
-    </div>
-  </div>
-  <div class="dropdown_igem">
-    <button class="dropbtn_igem"onclick="Modelling()">Modelling
+                        </button>
+                        <div class="dropdown-content_igem"id="dropdownparts_igem">
+                            <a href="https://setaucl.github.io/Parts/design.html">Part Design</a>
+                            <a href="https://setaucl.github.io/Parts/parts.html">Parts</a>
+                            <a href="https://setaucl.github.io/Parts/improve.html">Improved Part</a>
+                        </div>
+                    </div>
+                    <div class="dropdown_igem">
+                        <button class="dropbtn_igem"onclick="Modelling()">Modelling
 
-    </button>
-    <div class="dropdown-content_igem"id="dropdownmodelling_igem">
-        <a href="http://2018.igem.org/Team:UCL/Model">Modelling</a>
-    </div>
-  </div>
-  <div class="dropdown_igem">
-    <button class="dropbtn_igem"onclick="Humanpractices()">Human Practices
+                        </button>
+                        <div class="dropdown-content_igem"id="dropdownmodelling_igem">
+                            <a href="https://setaucl.github.io/Modelling/model.html">Modelling</a>
+                        </div>
+                    </div>
+                    <div class="dropdown_igem">
+                        <button class="dropbtn_igem"onclick="Humanpractices()">Human Practices
 
-    </button>
-    <div class="dropdown-content_igem"id="dropdownhumanpractices_igem">
-        <a href="http://2018.igem.org/Team:UCL/Human_Practices">Human Practices</a>
-        <a href="http://2018.igem.org/Team:UCL/Public_Engagement">Public Engagement</a>
-        <a href="http://2018.igem.org/Team:UCL/Collaborations">Collaborations</a>
-    </div>
-  </div>
-  <div class="dropdown_igem">
-    <button class="dropbtn_igem"onclick="Notebook()">Notebook
+                        </button>
+                        <div class="dropdown-content_igem"id="dropdownhumanpractices_igem">
+                            <a href="https://setaucl.github.io/Human_Practices/Human_Practices.html">Human Practices</a>
+                            <a href="https://setaucl.github.io/Human_Practices/public_engagement.html">Public Engagement</a>
+                            <a href="https://setaucl.github.io/Human_Practices/collaborations.html">Collaborations</a>
+                        </div>
+                    </div>
+                    <div class="dropdown_igem">
+                        <button class="dropbtn_igem"onclick="Notebook()">Notebook
 
-    </button>
-    <div class="dropdown-content_igem"id="dropdownnotebook_igem">
-        <a href="http://2018.igem.org/Team:UCL/Notebook">Notebook</a>
-        <a href="http://2018.igem.org/Team:UCL/Achievements">Achievements</a>
-        <a href="http://2018.igem.org/Team:UCL/Experiments">Experiments</a>
-    </div>
-  </div>
+                        </button>
+                        <div class="dropdown-content_igem"id="dropdownnotebook_igem">
+                            <a href="https://setaucl.github.io/Notebook/notebook.html">Notebook</a>
+                            <a href="https://setaucl.github.io/Notebook/achievements.html">Achievements</a>
+                            <a href="https://setaucl.github.io/Notebook/experiments.html">Experiments</a>
+                        </div>
+                    </div>
 
 
-</div>
-</div>
-</div>
+                </div>
+            </div>
+        </div>
+            <div class="navbar-brand_igem"><a href="http://2018.igem.org/Team:UCL">
+                <img class="img-logo_igem" src="http://2018.igem.org/wiki/images/7/73/T--UCL--Logo2.png" ></a>
+            </div>
 
-<script>
-  $(window).on('scroll',function(){
-    if($(window).scrollTop()){
-      $('.navbarzindex').addClass('black');
+            <div class="topnav_igem" id="myTopnav_igem">
+                <div class="floatright_igem">
+                    <a href="javascript:void(0);" style="font-size:21px;" class="icon_igem" onclick="myFunction()">&#9776;</a>
+                    <div class="dropdown_igem">
+                        <button class="dropbtn_igem"onclick="People()">People
+
+                        </button>
+                        <div class="dropdown-content_igem"id="dropdownpeople_igem">
+                            <a href="http://2018.igem.org/Team:UCL/Team">Team</a>
+                            <a href="http://2018.igem.org/Team:UCL/Attributions">Attributions</a>
+                            <a href="http://2018.igem.org/Team:UCL/Attributions#Sponsors">Sponsors</a>
+                        </div>
+                    </div>
+                    <div class="dropdown_igem">
+                        <button class="dropbtn_igem"onclick="Project()">Project
+
+                        </button>
+                        <div class="dropdown-content_igem"id="dropdownproject_igem">
+                            <a href="http://2018.igem.org/Team:UCL/Description">Description</a>
+                            <a href="http://2018.igem.org/Team:UCL/Results">Results</a>
+                            <a href="http://2018.igem.org/Team:UCL/Demonstrate">Demonstrate</a>
+                            <a href="http://2018.igem.org/Team:UCL/InterLab">InterLab</a>
+                            <a href="http://2018.igem.org/Team:UCL/Safety">Safety</a>
+                        </div>
+                    </div>
+                    <div class="dropdown_igem">
+                        <button class="dropbtn_igem"onclick="Parts()">Parts
+
+                        </button>
+                        <div class="dropdown-content_igem"id="dropdownparts_igem">
+                            <a href="http://2018.igem.org/Team:UCL/Design">Part Design</a>
+                            <a href="http://2018.igem.org/Team:UCL/Parts">Parts</a>
+                            <a href="http://2018.igem.org/Team:UCL/Improve">Improved Part</a>
+                        </div>
+                    </div>
+                    <div class="dropdown_igem">
+                        <button class="dropbtn_igem"onclick="Modelling()">Modelling
+
+                        </button>
+                        <div class="dropdown-content_igem"id="dropdownmodelling_igem">
+                            <a href="http://2018.igem.org/Team:UCL/Model">Modelling</a>
+                        </div>
+                    </div>
+                    <div class="dropdown_igem">
+                        <button class="dropbtn_igem"onclick="Humanpractices()">Human Practices
+
+                        </button>
+                        <div class="dropdown-content_igem"id="dropdownhumanpractices_igem">
+                            <a href="http://2018.igem.org/Team:UCL/Human_Practices">Human Practices</a>
+                            <a href="http://2018.igem.org/Team:UCL/Public_Engagement">Public Engagement</a>
+                            <a href="http://2018.igem.org/Team:UCL/Collaborations">Collaborations</a>
+                        </div>
+                    </div>
+                    <div class="dropdown_igem">
+                        <button class="dropbtn_igem"onclick="Notebook()">Notebook
+
+                        </button>
+                        <div class="dropdown-content_igem"id="dropdownnotebook_igem">
+                            <a href="http://2018.igem.org/Team:UCL/Notebook">Notebook</a>
+                            <a href="http://2018.igem.org/Team:UCL/Achievements">Achievements</a>
+                            <a href="http://2018.igem.org/Team:UCL/Experiments">Experiments</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <script>
+        $(window).on('scroll',function(){
+            if($(window).scrollTop()){
+                $('.navbarzindex').addClass('black');
+            }
+            else {
+                $('.navbarzindex').removeClass('black');
+            }
+        })
+    </script>
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav_igem");
+        if (x.className === "topnav_igem") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav_igem";
+        }
     }
-    else {
-      $('.navbarzindex').removeClass('black');
-    }
-  })
-</script>
-<script>
-function myFunction() {
-    var x = document.getElementById("myTopnav_igem");
-    if (x.className === "topnav_igem") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav_igem";
-    }
-}
 </script>
 
 <script>
@@ -193,82 +265,82 @@ $(document).ready(function() {
                             <div class="container">
                                 <div class="row">
                                     <div class="col-sm-10 mmmm mrfont">
-                                      <br>
-                                      <p>Synthesised biopolymers are gradually gaining importance in a myriad of biotechnology applications. Spider silk has proved to compete with steel due to its outstanding mechanical properties and environmental sustainability.
-</p>
-<br>
-<p>During our project we prove the modularity of our intein based platform; two orthogonal intein flanked monomers (BBa_K2842680 and BBa_K2842690) and an intein passenger (BBa_K2842669). The platform enables functionalization of proteins and we aim to prove this concept by showing that our intein passenger works in a plug-and-play fashion and hence can substitute a reporter protein (mScarlet) with proteins of choice: <br>
-1) We used modular SapI sites to substitute mScarlet with NikR (giving rise to BBa_K2842710, a nickel binding protein bound to intein). Our Sanger sequencing results in Figure 1 demonstrate that NikR was successfully cloned into intein passenger. <br>
-We substituted mScarlet with an estrogen binding peptide (giving rise to BBa_K2842720). Successful assembly into the intein passenger is shown in Figure 2. Estrogen binding peptides can bind chemicals capable of causing hormonal imbalances in human health. <br>
-<br><br>
-<p>These two functionalization proteins constitute to a fundamental element of our toolbox for biomaterial polymerisation. The T7 promoters were used to express both proteins on a larger scale. The two can then be fused to the intein flanked monomer proteins. </p>
-<br>
-<p>We have shown that intein passenger is a modular platform capable of substituting a reporter protein for a functionalizing protein of choice via Golden Gate and Gibson Assembly. Thanks to our SapI sites we can insert any protein in between an intein cap capable of binding spider silk or any other biomaterial. Thanks to the design of our platform, future iGEM teams can extend the possible applications of biomaterial functionalization.
-</p>
-<br>
-<br><br>
-<div class="card-title text-center">
-    <div class="h4_cards">Improvement</div>
-</div>
-<br>
-<p>Future studies could look into testing the modularity in the polymerisation platform, especially on a large scale. The intein passenger constructs can have splicing activity assessed for their ability to assemble fusion proteins. Ideally, spider silk, or any other biomaterial, will be expressed and spun into fibres. These fibres can be checked for functional activity. For example, spider silk with nickel binding proteins can be used to test its effectiveness in removing nickel from water. It would also be interesting to know whether the functionalizing proteins have an effect on the ability for silk proteins to spin. <br>
+                                        <br>
+                                        <p>Synthesised biopolymers are gradually gaining importance in a myriad of biotechnology applications. Spider silk has proved to compete with steel due to its outstanding mechanical properties and environmental sustainability.
+                                        </p>
+                                        <br>
+                                        <p>During our project we prove the modularity of our intein based platform; two orthogonal intein flanked monomers (BBa_K2842680 and BBa_K2842690) and an intein passenger (BBa_K2842669). The platform enables functionalization of proteins and we aim to prove this concept by showing that our intein passenger works in a plug-and-play fashion and hence can substitute a reporter protein (mScarlet) with proteins of choice: <br>
+                                            1) We used modular SapI sites to substitute mScarlet with NikR (giving rise to BBa_K2842710, a nickel binding protein bound to intein). Our Sanger sequencing results in Figure 1 demonstrate that NikR was successfully cloned into intein passenger. <br>
+                                            We substituted mScarlet with an estrogen binding peptide (giving rise to BBa_K2842720). Successful assembly into the intein passenger is shown in Figure 2. Estrogen binding peptides can bind chemicals capable of causing hormonal imbalances in human health. <br>
+                                            <br><br>
+                                            <p>These two functionalization proteins constitute to a fundamental element of our toolbox for biomaterial polymerisation. The T7 promoters were used to express both proteins on a larger scale. The two can then be fused to the intein flanked monomer proteins. </p>
+                                            <br>
+                                            <p>We have shown that intein passenger is a modular platform capable of substituting a reporter protein for a functionalizing protein of choice via Golden Gate and Gibson Assembly. Thanks to our SapI sites we can insert any protein in between an intein cap capable of binding spider silk or any other biomaterial. Thanks to the design of our platform, future iGEM teams can extend the possible applications of biomaterial functionalization.
+                                            </p>
+                                            <br>
+                                            <br><br>
+                                            <div class="card-title text-center">
+                                                <div class="h4_cards">Improvement</div>
+                                            </div>
+                                            <br>
+                                            <p>Future studies could look into testing the modularity in the polymerisation platform, especially on a large scale. The intein passenger constructs can have splicing activity assessed for their ability to assemble fusion proteins. Ideally, spider silk, or any other biomaterial, will be expressed and spun into fibres. These fibres can be checked for functional activity. For example, spider silk with nickel binding proteins can be used to test its effectiveness in removing nickel from water. It would also be interesting to know whether the functionalizing proteins have an effect on the ability for silk proteins to spin. <br>
 
 
- </p>
+                                            </p>
 
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </section>
+
+
+
                     </div>
-                </section>
-
-
-
+                </div>
             </div>
+
         </div>
-        </div>
+        <!--FOOTER================================================================== -->
 
-    </div>
-    <!--FOOTER================================================================== -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <center>
+                            <div class="h2_footer_igem">Our Location</div>
+                            University College London<br />
+                            Gower St, Bloomsbury<br />London <br />WC1E 6BT
+                            <span></span>
 
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <center>
-                        <div class="h2_footer_igem">Our Location</div>
-                        University College London<br />
-      Gower St, Bloomsbury<br />London <br />WC1E 6BT
-                        <span></span>
+                        </center>
+                    </div>
+                    <div class="col-lg-4">
+                        <center>
+                            <div class="h2_footer_igem">Contact Us</div>
+                            ucl.igem@ucl.ac.uk
+                            <a class="footer_img_igem" href="https://www.ucl.ac.uk/">
+                                <img src="http://2018.igem.org/wiki/images/f/ff/T--UCL--UCLLogo.jpeg" height="100rem;" />
+                            </a>
+                        </center>
+                    </div>
+                    <div class="col-lg-4">
+                        <center>
+                            <div class="h2_footer_igem">Follow Us</div>
+                            <a href="https://www.facebook.com/UCLiGEM/"class="contacticons">
+                                <img src="http://2018.igem.org/wiki/images/c/c4/T--UCL--FBLogo.svg" style="padding-top:1em;" height="62rem;"/>
+                            </a>
+                            <a href="https://twitter.com/ucligem?lang=en"class="contacticons">
+                                <img src="http://2018.igem.org/wiki/images/e/ed/T--UCL--TwitterLogo.svg" style="padding-top:1em;" height="62rem;"/>
+                            </a>
+                            <a href="https://www.instagram.com/ucl.igem/"class="contacticons">
+                                <img src="http://2018.igem.org/wiki/images/3/31/T--UCL--InstaLogo.png" style="padding-top:1em;" height="62rem;"/>
 
-                    </center>
-                </div>
-                <div class="col-lg-4">
-                    <center>
-                        <div class="h2_footer_igem">Contact Us</div>
-                      ucl.igem@ucl.ac.uk
-                        <a class="footer_img_igem" href="https://www.ucl.ac.uk/">
-                            <img src="http://2018.igem.org/wiki/images/f/ff/T--UCL--UCLLogo.jpeg" height="100rem;" />
-                        </a>
-                    </center>
-                </div>
-                <div class="col-lg-4">
-                    <center>
-                        <div class="h2_footer_igem">Follow Us</div>
-                        <a href="https://www.facebook.com/UCLiGEM/"class="contacticons">
-                            <img src="http://2018.igem.org/wiki/images/c/c4/T--UCL--FBLogo.svg" style="padding-top:1em;" height="62rem;"/>
-                        </a>
-                        <a href="https://twitter.com/ucligem?lang=en"class="contacticons">
-                            <img src="http://2018.igem.org/wiki/images/e/ed/T--UCL--TwitterLogo.svg" style="padding-top:1em;" height="62rem;"/>
-                        </a>
-                        <a href="https://www.instagram.com/ucl.igem/"class="contacticons">
-                            <img src="http://2018.igem.org/wiki/images/3/31/T--UCL--InstaLogo.png" style="padding-top:1em;" height="62rem;"/>
-
-                        </a>
-                    </center>
+                            </a>
+                        </center>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</body>
-</html>
+    </body>
+    </html>
