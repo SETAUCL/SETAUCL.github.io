@@ -105,7 +105,6 @@ body
 .navbarzindex .topnav_igem {
   overflow: hidden;
   background-color: rgba(255,255,255,1);
-  margin-top:0px;
   transition:0.3s;
 }
 .navbarzindex.black .topnav_igem
